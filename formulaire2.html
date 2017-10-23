@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mon formulaire 2</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="abcd.css"/>
+</head>
+<body>
+	<div class="page">
+
+	<form method="post" action="resume.php">
+    <fieldset>
+       <legend>Vos coordonnées</legend><br /> <!-- Titre du fieldset --> 
+       	<label for="choix"> Monsieur </label> <input type="radio" name="choix" value="Monsieur" >
+   		<label for="choix"> Madame </label> <input type="radio" name="choix" value="Madame">
+   		<label for="choix"> Mademoiselle </label> <input type="radio" name="choix" value="Mademoiselle"><br /><br /><br />
+
+   	<div class="ident">
+       <label for="nom">Quel est votre nom </label> : <input type="text" name="nom" id="nom" required /><br />
+       <label for="prenom">Quel est votre prénom </label> : <input type="text" name="prenom" id="prenom"/><br />
+       <label for="multiplier">taper le nombre de répétition</label> : <input type="text" name="multiplier" id="multiplier"><br />
+	   <label for="email">Quel est votre e-mail </label> : <input type="email" name="email" id="email" /><br />
+     </div>
+   </fieldset><br /><br />
+
+   
+   <fieldset>
+   	<legend>Vous concernant...</legend>
+       <label for="pays">Dans quel pays habitez-vous ?</label><br />
+       <select name="pays[]" id="pays" multiple>
+           <option value="france">France</option>
+           <option value="espagne">Espagne</option>
+           <option value="italie">Italie</option>
+           <option value="royaume-uni">Royaume-Uni</option>
+           <option value="canada">Canada</option>
+           <option value="etats-unis">États-Unis</option>
+           <option value="chine">Chine</option>
+           <option value="japon">Japon</option>
+       </select>
+   </fieldset><br /><br />
+
+   <fieldset>
+   	<legend>commentaire...</legend>
+   	<textarea name="message" rows="8" cols="45">
+Votre message ici.
+</textarea>
+   </fieldset>
+
+
+   
+   <input type="submit" value="Envoyer"/>
+   <input type="reset" value="RAZ"/>
+
+	</form>
+
+	</div>
+
+</body>
+</html>
