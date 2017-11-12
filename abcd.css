@@ -1,0 +1,57 @@
+form {
+ background-color:#FAFAFA;
+ padding:10px;
+ width:600px;
+ margin: auto;
+ }
+
+label, input {
+
+	border-radius : 10px 10px 10px 10px;
+}
+
+div.ident input {
+
+	width :250px;
+}
+
+div.ident label {
+
+display: inline-block;
+width: 260px;
+/*border: 2px solid black;*/
+	}
+
+div.Financement label{ 
+	width:160px;
+	display: inline-block;
+}
+
+div.Financement input{ 
+	
+	display: inline-block;
+}
+
+
+legend {
+ color:#DF3F3F;
+ font-weight:bold;
+ }
+
+fieldset{
+
+	 border-radius : 20px 20px 20px 20px;
+}
+
+input[type=submit] {
+
+	background: green;
+	text-align: justify;
+	margin-left:400px;
+}
+input[type=reset] {
+
+	background: red;
+	text-align: justify;
+	
+}
